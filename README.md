@@ -2,7 +2,7 @@
 Scripts for System Alert to private or stream with file upload option too
 
 
-##Do curl installation
+## Do curl installation
 ```
  apt-get install curl php
 ```
@@ -12,16 +12,16 @@ Based on API : https://zulipchat.com/api/send-message#usage-examples
 ```
 php send-zulip-msg.php "private" "deepen@technoinfotech.com" "text Msg Here"
 ```
-##only Text Msg for Stream in one topic.
+## only Text Msg for Stream in one topic.
 ```
 php send-zulip-msg.php "stream" "ClubEmerald IT" "SystemAlerts"  "Text Msg Here"
 ```
-#  Text Msg + any file upload (max 25MB) to single user
+##  Text Msg + any file upload (max 25MB) to single user
 ```
 php send-zulip-msg.php "private" "deepen@technoinfotech.com" "text Msg Here " 
 "/var/www/html/downloads/club-whatapps-logo.png"
 ```
-#  Text Msg + any file upload (max 25MB) for Stream in one topic.
+##  Text Msg + any file upload (max 25MB) for Stream in one topic.
 ```
 php send-zulip-msg.php stream "ClubEmerald IT" "SystemAlerts"  "Text Msg Here" "/var/www/html/downloads/club-whatapps-logo.png"
 ```
